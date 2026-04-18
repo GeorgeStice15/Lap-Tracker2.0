@@ -49,9 +49,9 @@
   .btn.danger{background:#2a0004;border-color:#5a0a10;color:#ff8080}
   .btn.danger:hover{background:#3a0006}
   .btn.small{padding:4px 8px;font-size:12px}
-
+ 
   main{flex:1;display:grid;grid-template-columns:300px 1fr;min-height:0}
-
+ 
   /* Sidebar */
   #sidebar{
     background:var(--panel);border-right:1px solid var(--border);
@@ -77,7 +77,7 @@
   .track-card .info .name{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .track-card .info .meta{font-size:11px;color:var(--muted);display:flex;gap:6px}
   .track-card .pb{font-size:11px;color:var(--purple);font-family:"SF Mono",Menlo,monospace}
-
+ 
   /* Content */
   #content{overflow-y:auto;padding:24px 32px}
   .track-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:20px;flex-wrap:wrap}
@@ -92,11 +92,11 @@
   .stat .value{font-size:20px;font-weight:600;font-family:"SF Mono",Menlo,monospace;margin-top:2px}
   .stat .value.pb{color:var(--purple)}
   .stat .value.good{color:var(--green)}
-
+ 
   .panels{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
   .panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px}
   .panel h3{margin:0 0 14px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted)}
-
+ 
   /* Track map */
   .track-map{background:#0a0a12;border-radius:8px;padding:12px;display:flex;justify-content:center;align-items:center;min-height:280px}
   .track-map svg{width:100%;height:auto;max-height:320px}
@@ -106,10 +106,10 @@
   .track-map .sector-s3{stroke:#ffcd3c}
   .track-map .start-line{stroke:#fff;stroke-width:3;stroke-dasharray:4 4}
   .track-map .sector-marker{fill:#fff;stroke:#000;stroke-width:1}
-
+ 
   .sector-legend{display:flex;gap:16px;margin-top:10px;justify-content:center;font-size:11px;color:var(--muted)}
   .sector-legend .dot{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:middle}
-
+ 
   /* Entry form */
   .form-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px}
   .form-row.full{grid-template-columns:1fr}
@@ -125,7 +125,7 @@
   .field input.time{font-family:"SF Mono",Menlo,monospace}
   .field .hint{font-size:10px;color:var(--muted);margin-top:3px}
   .form-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
-
+ 
   /* History table */
   .history-wrap{overflow-x:auto}
   table.history{width:100%;border-collapse:collapse;font-size:13px}
@@ -142,7 +142,7 @@
   .badge.s3{background:rgba(255,205,60,.15);color:#ffcd3c}
   .badge.pb{background:rgba(179,119,255,.2);color:var(--purple)}
   .empty{color:var(--muted);text-align:center;padding:30px;font-size:13px}
-
+ 
   /* Driver chip + leaderboard */
   .driver-chip{
     display:inline-block;padding:3px 9px;border-radius:4px;
@@ -165,13 +165,13 @@
   table.leaderboard tr.bronze td.rank{color:#cd7f32;font-size:16px}
   table.leaderboard tr.gold td.total{color:var(--purple);font-weight:600}
   table.leaderboard tr:hover{background:var(--panel-2)}
-
+ 
   /* Scrollbars */
   ::-webkit-scrollbar{width:8px;height:8px}
   ::-webkit-scrollbar-track{background:var(--bg)}
   ::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
   ::-webkit-scrollbar-thumb:hover{background:#3a3a4a}
-
+ 
   /* Hamburger + backdrop — desktop hidden, mobile only */
   .hamburger{
     display:none;align-items:center;justify-content:center;
@@ -187,12 +187,12 @@
     background:rgba(0,0,0,.6);z-index:150;backdrop-filter:blur(2px);
   }
   #sidebarBackdrop.open{display:block}
-
+ 
   /* Tablet */
   @media (max-width: 1100px){
     .panels{grid-template-columns:1fr}
   }
-
+ 
   /* Mobile */
   @media (max-width: 900px){
     main{grid-template-columns:1fr;grid-template-rows:1fr}
@@ -204,7 +204,7 @@
     nav.series-nav a{padding:6px 10px;font-size:11px}
     .header-actions{gap:4px}
     .btn.small{padding:6px 10px;font-size:11px;min-height:34px}
-
+ 
     #sidebar{
       position:fixed;top:0;left:0;bottom:0;
       width:88%;max-width:320px;z-index:200;
@@ -220,9 +220,9 @@
       padding:0 14px 10px;border-bottom:1px solid var(--border);margin-bottom:8px;
       text-transform:uppercase;letter-spacing:1px;
     }
-
+ 
     #content{padding:16px 14px;overflow-x:hidden}
-
+ 
     .track-header{gap:10px;flex-direction:column;align-items:stretch}
     .track-header .title h2{font-size:20px;line-height:1.2}
     .track-header .title .subtitle{font-size:12px}
@@ -230,10 +230,10 @@
     .stat{min-width:0;flex:1 1 calc(33% - 4px);padding:8px 10px}
     .stat .label{font-size:9px}
     .stat .value{font-size:15px}
-
+ 
     .panel{padding:14px}
     .panel h3{font-size:12px;margin-bottom:10px}
-
+ 
     /* Form: stack everything, finger-friendly */
     .form-row{grid-template-columns:1fr !important;gap:8px}
     .field input, .field select, .field textarea{
@@ -242,7 +242,7 @@
     }
     .field textarea{min-height:80px}
     .form-actions .btn{min-height:44px;padding:12px 18px;font-size:14px;flex:1}
-
+ 
     /* Tables: scroll horizontally with edge fade */
     .history-wrap{
       margin:0 -14px;padding:0 14px;
@@ -262,12 +262,12 @@
     }
     table.history tr:hover td:first-child,
     table.leaderboard tr:hover td:first-child{background:var(--panel-2)}
-
+ 
     .track-map{min-height:220px;padding:8px}
     .track-map svg{max-height:260px}
     .sector-legend{font-size:10px;gap:10px}
   }
-
+ 
   /* Small phones */
   @media (max-width: 480px){
     header h1{font-size:14px}
@@ -295,6 +295,7 @@
       <a href="f1-lap-tracker.html" class="active">F1</a>
       <a href="acc-lap-tracker.html">ACC</a>
     </nav>
+    <button class="btn small" id="migrateBtn" style="display:none" title="Upload this browser's old localStorage laps into Supabase">Migrate Local</button>
     <button class="btn small" id="exportBtn">Export</button>
     <button class="btn small" id="importBtn">Import</button>
     <input type="file" id="importFile" accept=".json" style="display:none">
@@ -310,8 +311,17 @@
     <div id="trackView"></div>
   </section>
 </main>
-
+ 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+/* ============================================================
+   Supabase connection
+   ============================================================ */
+const SUPABASE_URL = "https://jcuxdbumectdphfmbrsf.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpjdXhkYnVtZWN0ZHBoZm1icnNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY1MTMyMTgsImV4cCI6MjA5MjA4OTIxOH0.laP6DnYSolbAXhwZplkDmB1B1m0SzrPj40hjr91LpH8";
+const SERIES = "f1";
+const supa = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+ 
 /* ============================================================
    2026 F1 Calendar + Track data
    - svg: path data in viewBox 0 0 800 500 (approximated outlines)
@@ -391,34 +401,101 @@ const TRACKS = [
     svg:"M 130 420 L 130 240 C 130 180 160 150 220 150 L 400 150 C 440 150 460 130 455 100 L 450 80 C 445 60 465 50 495 60 L 600 100 C 670 130 710 190 710 270 L 705 390 C 700 435 670 455 620 455 L 190 455 C 150 455 130 445 130 420 Z",
     sectors:[0.33, 0.67] }
 ];
-
+ 
 /* ============================================================
    State + storage
    ============================================================ */
-const STORAGE_KEY = "f1-lap-tracker-v1";
+const PREFS_KEY = "f1-lap-tracker-prefs";
+const OLD_LS_KEY = "f1-lap-tracker-v1"; // previous localStorage data schema
 const state = {
   selectedTrackId: TRACKS[0].id,
   editingLapId: null,
   lastDriver: "",
-  entries: {} /* { trackId: [lap, lap, ...] } */
+  entries: {}, /* { trackId: [lap, lap, ...] }, mirrored from DB */
+  loading: true
 };
-
-function loadState(){
+ 
+/* Local prefs = just UI-level preferences (selected track, last driver) */
+function loadPrefs(){
   try{
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(PREFS_KEY);
     if(raw){
-      const data = JSON.parse(raw);
-      if(data.entries) state.entries = data.entries;
-      if(data.selectedTrackId) state.selectedTrackId = data.selectedTrackId;
-      if(data.lastDriver) state.lastDriver = data.lastDriver;
+      const d = JSON.parse(raw);
+      if(d.selectedTrackId) state.selectedTrackId = d.selectedTrackId;
+      if(d.lastDriver) state.lastDriver = d.lastDriver;
     }
-  }catch(e){console.warn("load failed", e)}
+  }catch(e){}
 }
-function saveState(){
-  const data = {entries: state.entries, selectedTrackId: state.selectedTrackId, lastDriver: state.lastDriver};
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+function savePrefs(){
+  localStorage.setItem(PREFS_KEY, JSON.stringify({
+    selectedTrackId: state.selectedTrackId,
+    lastDriver: state.lastDriver
+  }));
 }
-
+/* Backwards-compat shim — older code paths call saveState() */
+function saveState(){ savePrefs(); }
+ 
+/* ============================================================
+   Supabase <-> in-memory lap mapping
+   ============================================================ */
+function toDbLap(lap, trackId){
+  return {
+    series: SERIES,
+    track_id: trackId,
+    driver: lap.driver,
+    s1_ms: lap.s1,
+    s2_ms: lap.s2,
+    s3_ms: lap.s3,
+    session: lap.session || null,
+    lap_date: lap.date || null,
+    car: lap.car || null,
+    tyre: lap.tyre || null,
+    weather: lap.weather || null,
+    assists: lap.assists || null,
+    ai: lap.ai || null,
+    game: lap.game || null,
+    notes: lap.notes || null
+  };
+}
+function fromDbLap(row){
+  return {
+    id: row.id,
+    driver: row.driver,
+    s1: row.s1_ms, s2: row.s2_ms, s3: row.s3_ms, total: row.total_ms,
+    session: row.session,
+    date: row.lap_date,
+    car: row.car, tyre: row.tyre, weather: row.weather,
+    assists: row.assists, ai: row.ai, game: row.game,
+    notes: row.notes,
+    createdAt: row.created_at ? new Date(row.created_at).getTime() : Date.now()
+  };
+}
+ 
+async function fetchAllLaps(){
+  const { data, error } = await supa.from('laps').select('*').eq('series', SERIES);
+  if(error){ console.error(error); alert('Failed to load laps: '+error.message); return; }
+  state.entries = {};
+  for(const row of data){
+    if(!state.entries[row.track_id]) state.entries[row.track_id] = [];
+    state.entries[row.track_id].push(fromDbLap(row));
+  }
+  state.loading = false;
+}
+async function insertLapDb(dbLap){
+  const { data, error } = await supa.from('laps').insert(dbLap).select().single();
+  if(error) throw error;
+  return data;
+}
+async function updateLapDb(id, dbLap){
+  const { data, error } = await supa.from('laps').update(dbLap).eq('id', id).select().single();
+  if(error) throw error;
+  return data;
+}
+async function deleteLapDb(id){
+  const { error } = await supa.from('laps').delete().eq('id', id);
+  if(error) throw error;
+}
+ 
 /* Color per driver — hash the initials to a consistent hue */
 function driverColor(initials){
   if(!initials) return "#555";
@@ -433,7 +510,7 @@ function driverChip(initials, tiny=false){
   const color = driverColor(initials);
   return `<span class="driver-chip${tiny?" tiny":""}" style="background:${color}">${initials}</span>`;
 }
-
+ 
 /* ============================================================
    Time parsing + formatting
    Accepts: "1:23.456", "83.456", "1:23", "83", "1:23.4"
@@ -467,7 +544,7 @@ function formatTime(ms, opts={}){
   }
   return `${m}:${String(s).padStart(2,"0")}.${String(f).padStart(3,"0")}`;
 }
-
+ 
 /* ============================================================
    Lap helpers — PBs, totals, colors
    ============================================================ */
@@ -491,14 +568,14 @@ function sectorColor(val, pb){
   if(val === pb) return "var(--purple)";
   return "";
 }
-
+ 
 /* ============================================================
    Rendering
    ============================================================ */
 const $ = s => document.querySelector(s);
 const trackListEl = $("#trackList");
 const trackViewEl = $("#trackView");
-
+ 
 function renderSidebar(){
   trackListEl.innerHTML = TRACKS.map(t => {
     const pbs = getPBs(t.id);
@@ -527,7 +604,7 @@ function renderSidebar(){
     });
   });
 }
-
+ 
 /* Mobile sidebar drawer */
 const sidebarEl = document.getElementById("sidebar");
 const backdropEl = document.getElementById("sidebarBackdrop");
@@ -543,14 +620,15 @@ backdropEl.addEventListener("click", ()=>toggleSidebar(false));
 window.addEventListener("resize", ()=>{
   if(window.innerWidth > 900) toggleSidebar(false);
 });
-
+ 
 function renderContent(){
   const t = TRACKS.find(x=>x.id===state.selectedTrackId);
   if(!t){ trackViewEl.innerHTML = "<p>Track not found.</p>"; return; }
   const pbs = getPBs(t.id);
   const laps = getLaps(t.id).slice().sort((a,b)=>new Date(b.date)-new Date(a.date) || b.createdAt-a.createdAt);
-
+ 
   trackViewEl.innerHTML = `
+    ${state.loading ? `<div style="background:#1a0004;border:1px solid var(--red);padding:10px 14px;border-radius:8px;margin-bottom:16px;font-size:13px;color:var(--muted)">Loading laps from cloud…</div>` : ""}
     <div class="track-header">
       <div class="title">
         <h2>Round ${t.round} · ${t.name}</h2>
@@ -562,7 +640,7 @@ function renderContent(){
         <div class="stat"><div class="label">Laps logged</div><div class="value">${laps.length}</div></div>
       </div>
     </div>
-
+ 
     <div class="panels">
       <div class="panel">
         <h3>Overhead Layout</h3>
@@ -580,27 +658,27 @@ function renderContent(){
           <span><span class="dot" style="background:#ffcd3c"></span>Sector 3${pbs.s3?` · ${formatTime(pbs.s3,{compact:true})}`:""}</span>
         </div>
       </div>
-
+ 
       <div class="panel">
         <h3>${state.editingLapId ? "Edit Lap" : "Log a Lap"}</h3>
         ${renderForm(t, pbs)}
       </div>
     </div>
-
+ 
     <div class="panel">
       <h3>Top 10 Leaderboard</h3>
       <div class="history-wrap">${renderLeaderboard(laps)}</div>
     </div>
-
+ 
     <div class="panel">
       <h3>Full Lap History</h3>
       <div class="history-wrap">${renderHistory(t, pbs, laps)}</div>
     </div>
   `;
-
+ 
   // Apply sector path clipping using stroke-dasharray based on the whole path length
   requestAnimationFrame(()=>applySectorSplit(t));
-
+ 
   // Wire up form
   const form = trackViewEl.querySelector("#lapForm");
   if(form){
@@ -616,14 +694,20 @@ function renderContent(){
     b.addEventListener("click", ()=>{state.editingLapId = b.dataset.edit;renderContent();});
   });
   trackViewEl.querySelectorAll("[data-delete]").forEach(b=>{
-    b.addEventListener("click", ()=>{
+    b.addEventListener("click", async ()=>{
       if(!confirm("Delete this lap?")) return;
-      state.entries[t.id] = getLaps(t.id).filter(l=>l.id !== b.dataset.delete);
-      saveState();renderSidebar();renderContent();
+      try {
+        await deleteLapDb(b.dataset.delete);
+        await fetchAllLaps();
+        renderSidebar();
+        renderContent();
+      } catch(err){
+        alert("Delete failed: " + err.message);
+      }
     });
   });
 }
-
+ 
 function applySectorSplit(t){
   const p1 = document.getElementById("trackPath-s1");
   const p2 = document.getElementById("trackPath-s2");
@@ -638,7 +722,7 @@ function applySectorSplit(t){
   p2.setAttribute("stroke-dashoffset", `${-l1}`);
   p3.setAttribute("stroke-dasharray", `${l3} ${L}`);
   p3.setAttribute("stroke-dashoffset", `${-(l1+l2)}`);
-
+ 
   // Markers: start/finish + sector dividers
   const markers = document.getElementById("sectorMarkers");
   markers.innerHTML = "";
@@ -656,7 +740,7 @@ function applySectorSplit(t){
   addDot(s1Pt, "#ff4d6d");
   addDot(s2Pt, "#4dabff");
 }
-
+ 
 function renderForm(t, pbs){
   const lap = state.editingLapId ? getLaps(t.id).find(l=>l.id===state.editingLapId) : null;
   const today = new Date().toISOString().slice(0,10);
@@ -755,7 +839,7 @@ function renderForm(t, pbs){
     </form>
   `;
 }
-
+ 
 function recalcTotal(){
   const form = document.getElementById("lapForm");
   if(!form) return;
@@ -765,8 +849,8 @@ function recalcTotal(){
   const total = [s1,s2,s3].every(Number.isFinite) ? s1+s2+s3 : null;
   form.total.value = total!=null ? formatTime(total) : "";
 }
-
-function onSubmitLap(e){
+ 
+async function onSubmitLap(e){
   e.preventDefault();
   const form = e.target;
   const fd = new FormData(form);
@@ -783,11 +867,10 @@ function onSubmitLap(e){
     return;
   }
   const tId = state.selectedTrackId;
-  const id = fd.get("id") || `lap_${Date.now()}_${Math.random().toString(36).slice(2,7)}`;
-  const lap = {
-    id,
+  const existingId = fd.get("id");
+  const lapShape = {
     driver,
-    s1, s2, s3, total: s1+s2+s3,
+    s1, s2, s3,
     session: fd.get("session"),
     date: fd.get("date"),
     car: fd.get("car"),
@@ -796,19 +879,34 @@ function onSubmitLap(e){
     assists: fd.get("assists"),
     ai: fd.get("ai"),
     game: fd.get("game"),
-    notes: fd.get("notes"),
-    createdAt: Date.now()
+    notes: fd.get("notes")
   };
-  const list = getLaps(tId).filter(l=>l.id !== id);
-  list.push(lap);
-  state.entries[tId] = list;
-  state.lastDriver = driver;
-  state.editingLapId = null;
-  saveState();
-  renderSidebar();
-  renderContent();
+  const dbLap = toDbLap(lapShape, tId);
+ 
+  const submitBtn = form.querySelector('button[type=submit]');
+  const originalText = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Saving…";
+ 
+  try {
+    if(existingId){
+      await updateLapDb(existingId, dbLap);
+    } else {
+      await insertLapDb(dbLap);
+    }
+    state.lastDriver = driver;
+    state.editingLapId = null;
+    savePrefs();
+    await fetchAllLaps();
+    renderSidebar();
+    renderContent();
+  } catch(err){
+    alert("Save failed: " + err.message);
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalText;
+  }
 }
-
+ 
 function renderLeaderboard(laps){
   // Best lap per driver, ranked
   const byDriver = new Map();
@@ -844,7 +942,7 @@ function renderLeaderboard(laps){
     </table>
   `;
 }
-
+ 
 function renderHistory(t, pbs, laps){
   if(!laps.length) return `<div class="empty">No laps logged yet for this track. Punch in your first one above.</div>`;
   return `
@@ -885,7 +983,7 @@ function renderHistory(t, pbs, laps){
     </table>
   `;
 }
-
+ 
 /* ============================================================
    Import / Export
    ============================================================ */
@@ -906,25 +1004,101 @@ $("#importFile").addEventListener("change", async e=>{
     const text = await file.text();
     const data = JSON.parse(text);
     if(!data.entries) throw new Error("Invalid file");
-    if(!confirm("Import will merge with current data (incoming overwrites per-lap). Continue?")) return;
+    if(!confirm("Import will insert these laps into the cloud database. Continue?")) return;
+    const rows = [];
     for(const tId of Object.keys(data.entries)){
-      const existing = new Map((state.entries[tId]||[]).map(l=>[l.id,l]));
-      for(const lap of data.entries[tId]) existing.set(lap.id, lap);
-      state.entries[tId] = Array.from(existing.values());
+      for(const lap of data.entries[tId]) rows.push(toDbLap(lap, tId));
     }
-    saveState(); renderSidebar(); renderContent();
+    if(rows.length === 0){ alert("Nothing to import."); e.target.value=""; return; }
+    const { error } = await supa.from('laps').insert(rows);
+    if(error) throw error;
+    await fetchAllLaps();
+    renderSidebar(); renderContent();
+    alert(`Imported ${rows.length} lap${rows.length===1?"":"s"}.`);
   }catch(err){
     alert("Import failed: " + err.message);
   }
   e.target.value = "";
 });
-
+ 
+/* ============================================================
+   Migrate Local — one-shot upload of old localStorage laps
+   ============================================================ */
+function hasLocalLegacy(){
+  try{
+    const raw = localStorage.getItem(OLD_LS_KEY);
+    if(!raw) return false;
+    const d = JSON.parse(raw);
+    return d && d.entries && Object.keys(d.entries).length > 0;
+  }catch(e){ return false; }
+}
+if(hasLocalLegacy()){
+  $("#migrateBtn").style.display = "";
+}
+$("#migrateBtn").addEventListener("click", async ()=>{
+  const raw = localStorage.getItem(OLD_LS_KEY);
+  if(!raw){ alert("No local laps found."); return; }
+  let legacy;
+  try{ legacy = JSON.parse(raw); }catch(e){ alert("Couldn't parse local data."); return; }
+  if(!legacy.entries){ alert("Nothing to migrate."); return; }
+  const rows = [];
+  for(const tId of Object.keys(legacy.entries)){
+    for(const lap of legacy.entries[tId]) rows.push(toDbLap(lap, tId));
+  }
+  if(rows.length === 0){ alert("Nothing to migrate."); return; }
+  if(!confirm(`Upload ${rows.length} lap${rows.length===1?"":"s"} from this browser into Supabase?`)) return;
+  const btn = $("#migrateBtn");
+  btn.disabled = true; btn.textContent = "Migrating…";
+  try{
+    const { error } = await supa.from('laps').insert(rows);
+    if(error) throw error;
+    // Archive the old key so we don't offer to re-migrate
+    localStorage.setItem(OLD_LS_KEY + "-migrated", raw);
+    localStorage.removeItem(OLD_LS_KEY);
+    btn.style.display = "none";
+    await fetchAllLaps();
+    renderSidebar(); renderContent();
+    alert(`Migrated ${rows.length} lap${rows.length===1?"":"s"} to the cloud.`);
+  }catch(err){
+    alert("Migration failed: " + err.message);
+    btn.disabled = false; btn.textContent = "Migrate Local";
+  }
+});
+ 
+/* ============================================================
+   Realtime — other devices pushing laps appear live
+   ============================================================ */
+function setupRealtime(){
+  supa
+    .channel('laps-f1')
+    .on('postgres_changes',
+      { event: '*', schema: 'public', table: 'laps', filter: `series=eq.${SERIES}` },
+      async () => {
+        await fetchAllLaps();
+        renderSidebar();
+        renderContent();
+      })
+    .subscribe();
+}
+ 
 /* ============================================================
    Init
    ============================================================ */
-loadState();
-renderSidebar();
-renderContent();
+(async function init(){
+  loadPrefs();
+  renderSidebar();
+  renderContent(); // first paint shows "Loading…" because state.loading === true
+  try{
+    await fetchAllLaps();
+  }catch(err){
+    console.error(err);
+    alert("Couldn't load laps from Supabase: " + (err.message||err));
+    state.loading = false;
+  }
+  renderSidebar();
+  renderContent();
+  setupRealtime();
+})();
 </script>
 </body>
 </html>
